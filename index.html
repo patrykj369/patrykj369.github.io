@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DrumKIT</title>
+</head>
+<body>
+    <audio src="sounds/clap.wav" data-sound="clap"></audio>
+    <audio src="sounds/boom.wav" data-sound="boom"></audio>
+    <audio src="sounds/hihat.wav" data-sound="hihat"></audio>
+    <audio src="sounds/kick.wav" data-sound="kick"></audio>
+    <audio src="sounds/openhat.wav" data-sound="openhat"></audio>
+    <audio src="sounds/ride.wav" data-sound="ride"></audio>
+    <audio src="sounds/snare.wav" data-sound="snare"></audio>
+    <audio src="sounds/tink.wav" data-sound="tink"></audio>
+    <audio src="sounds/tom.wav" data-sound="tom"></audio>
+
+    <section class="keys">
+
+    <button class="key" id="clap">CLAP <br/> <span>A</span></button>
+    <button class="key" id="boom">BOOM <br/> <span>S</span></button>
+    <button class="key" id="hihat">HIHAT <br/> <span>D</span></button>
+    <button class="key" id="kick">KICK <br/> <span>F</span></button>
+    <button class="key" id="openhat">OPENHAT <br/> <span>G</span></button>
+    <button class="key" id="ride">RIDE <br/> <span>H</span></button>
+    <button class="key" id="snare">SNARE <br/> <span>J</span></button>
+    <button class="key" id="tink">TINK <br/> <span>K</span></button>
+    <button class="key" id="tom">TOM <br/> <span>L</span></button>
+
+    </section>
+
+    <section class="keysRecord">
+
+        <button class="keyRecord" id="startRecording1">Start Recording 1</button>
+        <button class="keyRecord" id="stopRecording1">Stop Recording 1</button>
+        <button class="keyRecord" id="playChannel1">Play Channel 1</button>
+        <button class="keyRecord" id="startRecording2">Start Recording 2</button>
+        <button class="keyRecord" id="stopRecording2">Stop Recording 2</button>
+        <button class="keyRecord" id="playChannel2">Play Channel 2</button>
+
+    </section>
+
+    <div id="myProgress">
+        <div id="myBar"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

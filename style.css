@@ -1,0 +1,89 @@
+html {
+    font-size: 10px;
+    background: url('images/background.jpg') center;
+    background-size: cover;
+  }
+
+body,html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+.key{
+    border: .2rem solid yellow;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 2.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 15rem;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    text-shadow: 0 0 .5rem black;
+}
+
+.keys{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+}
+.keysRecord{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+}
+
+.keyRecord{
+    border: .1rem solid white;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.3rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 9rem;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, .4);
+    text-shadow: 0 0 .5rem black;
+}
+
+.keyRecordPress{
+    border: .1rem solid red;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.3rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 9rem;
+    text-align: center;
+    color: black;
+    background: rgba(255, 255, 255, .4);
+    text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+  }
+
+span{
+    font-size: 1.5rem;
+}
+
+#myProgress {
+    width: 100vw;
+    background-color: grey;
+  }
+
+  #myBar {
+    width: 1%;
+    height: 30px;
+    background-color: green;
+  }

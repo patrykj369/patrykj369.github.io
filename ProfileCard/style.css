@@ -10,7 +10,7 @@ body{
     font-family: 'Kumbh Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url("images/bg-pattern-bottom.svg"),url("images/bg-pattern-top.svg");;
+    background: url("images/bg-pattern-bottom.svg"),url("images/bg-pattern-top.svg");;
     background-size: 1200px;
     background-repeat:no-repeat, no-repeat;
     background-position-x: 50vw, -20vw;

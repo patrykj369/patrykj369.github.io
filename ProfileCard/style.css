@@ -10,7 +10,7 @@ body{
     font-family: 'Kumbh Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url("../images/bg-pattern-bottom.svg"),url("../images/bg-pattern-top.svg");;
+    background-image: url("images/bg-pattern-bottom.svg"),url("images/bg-pattern-top.svg");;
     background-size: 1200px;
     background-repeat:no-repeat, no-repeat;
     background-position-x: 50vw, -20vw;
@@ -34,7 +34,7 @@ body > p{
 .card-background{
     margin-top: 30vh;
     height: 140px;
-    background: url("./images/bg-pattern-card.svg");
+    background: url("images/bg-pattern-card.svg");
     background-size: cover;
     background-color: hsl(185, 75%, 39%);
     border-radius: 10px 10px 0 0;
@@ -133,7 +133,7 @@ body > p{
         font-family: 'Kumbh Sans', sans-serif;
         margin: 0;
         padding: 0;
-        background-image: url("../images/bg-pattern-bottom.svg"),url("../images/bg-pattern-top.svg");;
+        background-image: url("images/bg-pattern-bottom.svg"),url("images/bg-pattern-top.svg");;
         background-size: 500px;
         background-repeat:no-repeat, no-repeat;
         background-position-x: 200px, -300px;
@@ -152,7 +152,7 @@ body > p{
     .card-background{
         margin-top: 30vh;
         height: 140px;
-        background: url("./images/bg-pattern-card.svg");
+        background: url("images/bg-pattern-card.svg");
         background-size: cover;
         background-color: hsl(185, 75%, 39%);
         border-radius: 10px 10px 0 0;

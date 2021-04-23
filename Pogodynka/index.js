@@ -809,7 +809,7 @@ class App {
     }
     getWeather(city) {
         return __awaiter(this, void 0, void 0, function* () {
-            const openWeatherUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${this.opwApiKey}`;
+            const openWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${this.opwApiKey}`;
             const weatherResponse = yield fetch(openWeatherUrl);
             const weatherData = yield weatherResponse.json();
             return weatherData;

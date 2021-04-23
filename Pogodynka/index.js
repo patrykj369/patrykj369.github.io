@@ -598,7 +598,6 @@ class App {
         document.body.addEventListener("click", (e) => this.getValue(e));
     }
     getValue(e) {
-        console.log(e.target);
         let nazwa = document.querySelector(".moreInfo");
         const tmp = e.target;
         if (tmp.className == "moreInfo") {
@@ -615,7 +614,7 @@ class App {
                     const p2 = document.createElement('p');
                     const p3 = document.createElement('p');
                     const p4 = document.createElement('p');
-                    console.log(city);
+                    
                     const srcImg = `http://openweathermap.org/img/wn/${city.hourly[i].weather[0].icon}@2x.png`;
                     img.src = srcImg;
                     p0.innerHTML = city.hourly[i].weather[0].main;

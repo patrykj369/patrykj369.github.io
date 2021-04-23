@@ -615,7 +615,7 @@ class App {
                     const p3 = document.createElement('p');
                     const p4 = document.createElement('p');
                     
-                    const srcImg = `http://openweathermap.org/img/wn/${city.hourly[i].weather[0].icon}@2x.png`;
+                    const srcImg = `https://openweathermap.org/img/wn/${city.hourly[i].weather[0].icon}@2x.png`;
                     img.src = srcImg;
                     p0.innerHTML = city.hourly[i].weather[0].main;
                     p1.innerHTML = "Temperature: " + Math.round(city.hourly[i].temp - 273.15).toString() + "&ordm C";
@@ -709,7 +709,7 @@ class App {
             newDegrees.innerHTML = Math.round(weather.main.temp - 273.15).toString();
             newAirPressureText.innerHTML = "Air pressure: ";
             newAirPressure.innerHTML = weather.main.pressure + " hPa";
-            const srcImg = `http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`;
+            const srcImg = `https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`;
             newImage.src = srcImg;
             newDegreesChar.innerHTML = "&ordm";
             newBtn.innerHTML = "More information";
@@ -761,7 +761,7 @@ class App {
             newDegrees.innerHTML = Math.round(weather.main.temp - 273.15).toString();
             newAirPressureText.innerHTML = "Air pressure: ";
             newAirPressure.innerHTML = weather.main.pressure + " hPa";
-            const srcImg = `http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`;
+            const srcImg = `https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`;
             newImage.src = srcImg;
             newDegreesChar.innerHTML = "&ordm";
             newBtn.innerHTML = "More information";

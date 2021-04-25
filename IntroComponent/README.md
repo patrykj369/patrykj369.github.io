@@ -5,9 +5,9 @@
 ## Welcome! 👋
 
 ### Desktop design in my implementation: 
-(./design/Desktop.png)
+![Desktop](./design/Desktop.PNG)
 
 #### Mobile design in my implementation: 
-(./design/mobile.png)
+![Mobile](./design/mobile.PNG)
 
 #### My stack: ✔ HTML ✔ CSS ✔ JS

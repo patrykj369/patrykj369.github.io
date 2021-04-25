@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@media (max-width: 376px){
+    body {
+        box-sizing: border-box;
+        background:linear-gradient(hsla(0, 100%, 48%, 0.548),hsla(0, 100%, 48%, 0.548)), url("./images/bg-intro-mobile.png");
+        background-size: cover;
+        font-family: 'Poppins';
+    }
+    header h1{
+        font-size: 28px;
+        margin-top: 100px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .firstDescription{
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        margin: 0 20px 0 20px;
+    }
+
+    #tryItButton{
+        margin: 60px auto 25px auto;
+        width: 90vw;
+        height: 80px;
+        background-color:hsl(248, 32%, 49%);
+        border-radius: 10px;
+        color: #fff;
+        box-shadow: 0px 8px 0px 0px rgba(41, 40, 41, 0.171);
+    }
+
+    #boldText{
+        font-weight: 600;
+    }
+
+    .pAlign{
+        position: relative;
+        top: 15px;
+        text-align: center;
+    }
+
+    .formS{
+        background-color: #fff;
+        margin: 0 10px 0 10px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0px 8px 0px 0px rgba(41, 40, 41, 0.171);
+    }
+    .formS input{
+        width: 85%;
+        height: 50px;
+        margin-bottom: 5px;
+        font-weight: 600;
+        padding-left: 15px;
+        border: 1px solid hsl(240, 6%, 91%);
+        border-radius: 5px;
+    }
+
+    #fname{
+        margin-top: 15px;
+    }
+
+    .formS input[type="submit"]{
+        width: 90%;
+        height: 50px;
+        background-color: hsl(154, 59%, 51%);
+        border-bottom: 4px solid hsl(154, 59%, 45%);
+        color: #fff;
+        text-transform: uppercase;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        /* box-shadow: 0px 2px 0px 0px hsla(154, 56%, 33%, 0.445); */
+    }
+
+    .formS p{
+        color: hsl(246, 25%, 77%);
+        font-size: 12px;
+        margin: -10px 30px 10px 30px;
+
+    }
+
+    .formS p span{
+        color: hsl(0, 100%, 74%);
+        font-weight: 700;
+        font-size: 12px;
+    }
+
+
+    .attribution{
+        margin-top: 40px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    #otherText{
+        word-break: break-all;
+        display: block;
+    }
+    .inputD{
+        position: relative;
+    }
+
+    #imgFname{
+        z-index: 10;
+        margin-left:-35px;
+        margin-top: 4vh;
+        position: absolute;
+        /* display: none; */
+        opacity: 0;
+    }
+
+    #pFname{
+        width: 86%;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: right;
+        color: hsl(0, 100%, 74%);
+        font-style: italic;
+        font-size: 12px;
+        /* display: none; */
+        opacity: 0;
+    }
+
+    #imgLname{
+        z-index: 10;
+        margin-left:-35px;
+        margin-top: 2vh;
+        position: absolute;
+        /* display: none; */
+        opacity: 0;
+    }
+
+    #pLname{
+        /* margin-top: -2vh; */
+        width: 86%;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: right;
+        color: hsl(0, 100%, 74%);
+        font-style: italic;
+        font-size: 12px;
+        /* display: none; */
+        opacity: 0;
+    }
+
+    #imgMail{
+        z-index: 10;
+        margin-left:-35px;
+        margin-top: 2vh;
+        position: absolute;
+        /* display: none; */
+        opacity: 0;
+    }
+
+    #pMail{
+        /* margin-top: -2vh; */
+        width: 86%;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: right;
+        color: hsl(0, 100%, 74%);
+        font-style: italic;
+        font-size: 12px;
+        /* display: none; */
+        opacity: 0;
+    }
+
+    #imgPassword{
+        z-index: 10;
+        margin-left:-35px;
+        margin-top: 2vh;
+        position: absolute;
+        /* display: none; */
+        opacity: 0;
+    }
+
+    #pPassword{
+        /* margin-top: -2vh; */
+        width: 86%;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: right;
+        color: hsl(0, 100%, 74%);
+        font-style: italic;
+        font-size: 12px;
+        /* display: none; */
+        opacity: 0;
+    }
+}
+
+@media (min-width: 377px){
+    body {
+        height: 100vh;
+        box-sizing: border-box;
+        background:linear-gradient(hsla(0, 100%, 48%, 0.548),hsla(0, 100%, 48%, 0.548)), url("./images/bg-intro-desktop.png");
+        background-size: cover;
+        font-family: 'Poppins';
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 5fr 1fr;
+        margin: 0 60px 0 60px;
+    }
+
+    .firstSection{
+        margin: 0 120px 0 auto;
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .secondSection{
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    header h1{
+        font-size: 48px;
+        margin-top: 220px;
+        color: #fff;
+        text-align: center;
+        width: 500px;
+        line-height: 50px;
+    }
+
+    .firstDescription{
+        color: #fff;
+        text-align: left;
+        font-size: 15px;
+        margin: 0 45px 0 45px;
+        width: 500px;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #tryItButton{
+        margin: 60px auto 25px 0;
+        padding: 0 10px 0 10px;
+        width: 36vw;
+        height: 6vh;
+        background-color:hsl(248, 32%, 49%);
+        border-radius: 10px;
+        color: #fff;
+        box-shadow: 0px 8px 0px 0px rgba(41, 40, 41, 0.171);
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #boldText{
+        font-weight: 600;
+    }
+
+    .pAlign{
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 6vh;
+        grid-row: 2;
+    }
+
+    .formS{
+        height: 54vh;
+        margin: 4vh auto 15px 0;
+        width: 36vw;
+        background-color: #fff;
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0px 8px 0px 0px rgba(41, 40, 41, 0.171);
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .formS input{
+        width: 85%;
+        height: 6vh;
+        font-weight: 600;
+        padding-left: 15px;
+        border: 1px solid hsl(240, 6%, 91%);
+        border-radius: 5px;
+        margin-top: -10px;
+    }
+
+    #fname{
+        margin-top: 2.5vh;
+    }
+
+    .formS input[type="submit"]{
+        width: 90%;
+        height: 6vh;
+        background-color: hsl(154, 59%, 51%);
+        border: none;
+        border-bottom: 4px solid hsl(154, 59%, 45%);
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin-bottom: 3vh;
+        /* box-shadow: 0px 2px 0px 0px hsla(154, 56%, 33%, 0.445); */
+    }
+
+    #pForm{
+        color: hsl(246, 25%, 77%);
+        font-size: 12px;
+        margin: -10px 30px 10px 30px;
+
+    }
+
+    .formS p span{
+        color: hsl(0, 100%, 74%);
+        font-weight: 700;
+        font-size: 12px;
+    }
+
+    footer{
+        width: 100%;
+        text-align: center;
+        grid-row: 3;
+        grid-column: auto / span 2;
+
+    }
+
+    .attribution{
+        font-size: 12px;
+        margin-top: 60px;
+    }
+
+    .inputD{
+        position: relative;
+    }
+
+    #imgFname{
+        z-index: 10;
+        margin-left:-35px;
+        margin-top: 4.5vh;
+        position: absolute;
+        /* display: none; */
+        opacity: 0;
+    }
+
+    #pFname{
+        width: 93%;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        text-align: right;
+        color: hsl(0, 100%, 74%);
+        font-style: italic;
+        font-size: 12px;
+        /* display: none; */
+        opacity: 0;
+    }
+
+    #imgLname{
+        z-index: 10;
+        margin-left:-35px;
+        margin-top: 1vh;
+        position: absolute;
+        /* display: none; */
+        opacity: 0;
+    }
+
+    #pLname{
+        /* margin-top: -2vh; */
+        width: 93%;
+        text-align: right;
+        color: hsl(0, 100%, 74%);
+        font-style: italic;
+        font-size: 12px;
+        /* display: none; */
+        opacity: 0;
+    }
+
+    #imgMail{
+        z-index: 10;
+        margin-left:-35px;
+        margin-top: 1vh;
+        position: absolute;
+        /* display: none; */
+        opacity: 0;
+    }
+
+    #pMail{
+        /* margin-top: -2vh; */
+        width: 93%;
+        text-align: right;
+        color: hsl(0, 100%, 74%);
+        font-style: italic;
+        font-size: 12px;
+        /* display: none; */
+        opacity: 0;
+    }
+
+    #imgPassword{
+        z-index: 10;
+        margin-left:-35px;
+        margin-top: 1vh;
+        position: absolute;
+        /* display: none; */
+        opacity: 0;
+    }
+
+    #pPassword{
+        /* margin-top: -2vh; */
+        width: 93%;
+        text-align: right;
+        color: hsl(0, 100%, 74%);
+        font-style: italic;
+        font-size: 12px;
+        /* display: none; */
+        opacity: 0;
+    }
+}

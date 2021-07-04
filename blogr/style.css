@@ -1,0 +1,674 @@
+body{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 420px) {
+
+.firstSection{
+    height: 70vh;
+    padding: 1rem;
+    background: url("./images/bg-pattern-intro.svg"), linear-gradient(175deg, #ff876f, #ff4252);
+    background-size: 150vh;
+    background-position: 34% 35%;
+    border-radius: 0 0 0 100px;
+}
+
+.icon-logo{
+    height: 2rem;
+    grid-column: 1;
+    justify-content: center;
+    align-content: center;
+}
+
+.icon-hamburger{
+    background: url("images/icon-hamburger.svg");
+    background-repeat: no-repeat;
+    height: 1.25rem;
+    grid-column: 3;
+    border: none;
+    /* justify-content: center;
+    align-content: center; */
+
+}
+
+.icon-hamburger-x{
+    background: url("images/icon-close.svg");
+    background-repeat: no-repeat;
+    height: 2.3rem;
+    grid-column: 3;
+    border: none;
+}
+
+.headerMobile{
+    padding: 1rem;
+    height: 2rem;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 6rem 1fr 2rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.firstContent{
+    color: #fff;
+    font-family: sans-serif;
+    margin-top: 7rem;
+}
+
+.firstContent > h1{
+    font-size: 2.3rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+.firstContent > h1 > span{
+    content: '\A';          /*rozdziela na nowa linie */
+    white-space: pre;       /*rozdziela na nowa linie */
+    font-size: 2.3rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+.firstContent > p{
+    margin: 1rem 2.2rem;
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.795);
+}
+
+.buttonStart{
+    height: 2.5rem;
+    width:8rem;
+    border-radius: 30px;
+    border: none;
+    color: #ff4252;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-right: .8rem;
+}
+
+.buttonLearn{
+    height: 2.5rem;
+    width:8rem;
+    border-radius: 30px;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.buttonsDiv{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.buttonsDivDesktop{
+    display: none;
+}
+
+.secondSection{
+    text-align: center;
+}
+
+.secondSection > img{
+    width: 100vw;
+    margin-bottom: 3rem;
+}
+
+.secondSection > h2{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 5.5rem;
+}
+
+.thirdSection{
+    margin-top: -30px;
+    padding: 0 50px 0 50px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.thirdSection > h2{
+    font-weight: 600;
+    padding: 0 10px 0 10px;
+
+}
+
+.thirdSection > p{
+    line-height: 1.6rem;
+    color: rgb(109, 107, 107);
+    font-size: .95rem;
+}
+
+.fourthSection{
+    margin-top: 40px;
+}
+
+.fifthSection{
+    margin-top: 35vh;
+    background: url("./images/bg-pattern-circles.svg"),#353755;
+    background-size: 70vh;
+    background-repeat: no-repeat;
+    background-position: 51% -30vh;
+    height: 70vh;
+    border-radius: 0 100px 0 100px;
+    font-family: sans-serif;
+    color: #fff;
+    display: grid;
+    grid-template-rows: 20vh 50vh;
+    margin-bottom: 50px;
+
+}
+.fifthContent{
+    grid-row: 2;
+    text-align: center;
+}
+
+.fifthContent > h2{
+    margin-top: 40px;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.fifthContent > p{
+    padding: 0 40px 0 40px;
+    font-size: .95rem;
+    line-height: 1.6rem;
+}
+
+.phones{
+    width: 100vw;
+    margin-top: -200px;
+}
+
+.footerSection{
+    text-align: center;
+    background-color: #24242c;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: .95rem;
+    border-radius: 0 100px 0 0;
+    padding-bottom: 50px;
+    padding-top: 3rem;
+}
+.footerList > p{
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 45px;
+}
+
+.footerList > ul > li > a{
+    text-decoration: none;
+    color: rgb(221, 217, 217);
+    font-family: sans-serif;
+    font-size: .95rem;
+}
+
+.footerList > ul > li {
+    list-style-type: none;
+
+}
+
+.footerList > ul{
+    padding: 0;
+    line-height: 1.8rem;
+
+}
+
+.footerList > img{
+    height: 35px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.afterFooter{
+    margin-bottom: 80px;
+}
+
+/* -------------------------------------- */
+/* expanded menu po kliknieciu hamburgera */
+/* -------------------------------------- */
+
+.menuMobileDiv{
+    width: 84vw;
+    min-height: 45vh;
+    z-index: 1;
+    position: absolute;
+    margin: 50px auto 0 auto;
+    left: calc(8vw - 15px);
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 1px 10px 10px -4px #b5b5b8;
+    display: grid;
+    grid-template-rows: 1fr 15vh;
+    padding: 10px;
+}
+
+
+.productArrow{
+    height: 8px;
+    margin-left: 5px;
+}
+
+.productP{
+    display: inline;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.productDiv{
+    margin: 30px auto 0 auto;
+    text-align: center;
+}
+
+.expandedDiv{
+    width: 80vw;
+    background: #efeff1;
+    border-radius: 8px;
+    margin: 15px auto 10px auto;
+    padding: 5px;
+}
+
+.expandedDiv > a{
+    font-family: sans-serif;
+    display: block;
+    margin: 15px auto;
+    text-decoration: none;
+    color: rgb(110, 109, 109);
+    font-weight: 600;
+}
+
+#connectDiv{
+    margin: 30px auto 10px auto;
+}
+
+/* ------------------------------------ */
+/* formularz logowania w hamburger menu */
+/* ------------------------------------ */
+
+.mobile-login-form{
+    display: flex;
+    height: 15vh;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.firstMenu{
+    grid-row: 1;
+}
+
+.secondMenu{
+    grid-row: 2;
+    border-top: 1px solid rgb(206, 205, 205);
+}
+
+.login-button{
+    margin: 5px auto;
+    height: 2.8rem;
+    width: 8rem;
+    border-radius: 24px;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.sign-in-button{
+    margin: 5px auto;
+    height: 2.8rem;
+    width: 8rem;
+    border-radius: 24px;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    background: linear-gradient(90deg, #f78e7a, #f3856f, #ff4252);
+
+}
+
+.desktopMenu{
+    display: none;
+}
+
+.buttonsDivDesktop{
+    display: none;
+}
+
+}
+
+@media only screen and (min-width: 421px){
+    #icon-hamburger-id{
+        display: none;
+    }
+
+    .firstSection{
+        height: 55vh;
+        padding: 1rem;
+        background: url("./images/bg-pattern-intro.svg"), linear-gradient(90deg, #fd7c63,#ff4252, rgb(129, 31, 11));
+        background-size: 390vh;
+        background-position: 24% 52%;
+        border-radius: 0 0 0 100px;
+    }
+
+    .headerMobile{
+        display: grid;
+        grid-auto-columns: .2fr 1fr 1fr;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+
+        padding: 30px;
+    }
+
+    .icon-logo{
+        height: 3rem;
+        grid-column: 1;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .buttonsDiv{
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    .buttonsDivDesktop{
+        text-align: right;
+        grid-column: 3;
+    }
+
+    .buttonStart{
+        height: 2.5rem;
+        width:8rem;
+        border-radius: 30px;
+        border: none;
+        color: #ff4252;
+        font-weight: 600;
+        font-size: 1rem;
+        margin-right: .8rem;
+        cursor: pointer;
+    }
+    .buttonStart:hover{
+        background: rgba(250, 250, 250, 0.185);
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .buttonLearn{
+        height: 2.5rem;
+        width:8rem;
+        border-radius: 30px;
+        background: none;
+        border: 1px solid #fff;
+        color: #fff;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .buttonLearn:hover{
+        color: #ff4252;
+        background-color: #fff;
+    }
+
+    .buttonLogSign{
+        height: 2.5rem;
+        width:8rem;
+        border-radius: 30px;
+        background: none;
+        border: none;
+        color: #fff;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    .buttonSignIn{
+        color: #ff4252;
+        background-color: #fff;
+    }
+
+    .buttonSignIn:hover{
+        color: #fff;
+    }
+
+    .buttonLogSign:hover{
+        background: rgba(250, 250, 250, 0.185);
+        cursor: pointer;
+    }
+
+    .desktopMenu{
+        display: flex;
+        grid-column: 2;
+    }
+
+    .singleMenu{
+        margin: 0 1.5rem;
+        color: #fff;
+        cursor: pointer;
+        font-size: 1.3rem;
+        font-family: sans-serif;
+    }
+
+    .singleMenu > p{
+        /* wylaczenie mozliwosci zaznaczania tekstu, nalezy na znaczniku tekstu wywolac */
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently
+                            supported by Chrome, Edge, Opera and Firefox */
+    }
+
+    .firstContent{
+        margin-top: 3vh;
+        padding: 20px;
+        font-family: sans-serif;
+
+        text-align: center;
+    }
+
+    .firstContent > h1{
+        color: #fff;
+        font-size: 3.2rem;
+        font-weight: 400;
+        margin: 10px;
+    }
+
+    .firstContent > p{
+        color: rgba(255, 255, 255, 0.719);
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    /* stylowanie sekcji zaraz pod banerem glownym */
+
+    .secondDiv{
+        height: 66vh;
+    }
+
+    .secondSectionDesktopText > h2{
+        margin-top: 12vh;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .secondSectionDesktopImg{
+        float: right;
+        height: 80vh;
+    }
+
+    .secondSectionDesktopImg > img{
+        height: 85vh;
+        margin-right: -9.8rem;
+        margin-top: -6rem;
+    }
+
+    .thirdSection{
+        padding: 2rem 5rem 2rem 5rem;
+        margin-left: 2rem;
+        width: 50vw;
+    }
+
+    .thirdSection > h2{
+        font-size: 1.6rem;
+        margin-top: 2rem;
+    }
+
+    .thirdSection > p{
+        line-height: 2.1rem;
+        padding-right: 5rem;
+    }
+
+    /* stylowanie sekcji z state of the Art Infrastructure */
+
+    .fifthSection{
+        width: 100vw;
+        height: 45vh;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        background: url("./images/bg-pattern-circles.svg"),#353755;
+        background-size: 120vh;
+        background-repeat: no-repeat;
+        background-position: -60% 80%;
+        border-radius: 0 100px 0 100px;
+
+        color: #fff;
+    }
+
+    .phones{
+        grid-column: 1;
+        position: absolute;
+        height: 65vh;
+        margin-top: -5rem;
+        margin-left: 5rem;
+    }
+
+    .fifthContent{
+        grid-column: 2;
+        margin-right: 10rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        align-content: left;
+        flex-direction: column;
+
+        line-height: 2rem;
+    }
+
+    .fifthContent > h2{
+        font-size: 2.5rem;
+        font-weight: 400;
+        margin: 5px 0;
+    }
+
+    /* stylowanie sekcji free open simple */
+
+    .freeSection{
+        margin-top: 22rem;
+        height: 60vh;
+        display: grid;
+
+        grid-template-columns: 1fr 1.4fr;
+        grid-template-rows: 1fr;
+    }
+
+    .freeGridFirst{
+        grid-column: 1;
+    }
+
+    .freeGridFirst > img{
+        height: 85vh;
+        margin-left: -19rem;
+        margin-top: -10rem;
+    }
+
+    .freeGrid{
+        margin: -.5rem 5rem auto -5rem;
+    }
+
+    .freeGridText > p{
+        max-width: 38vw;
+    }
+
+    /* stylowanie sekcji stopki */
+
+    .footerSection{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        margin-top: 15rem;
+        height: 20vh;
+        padding: 5rem 10rem;
+
+        background:#24242c;
+        color: #fff;
+        border-radius: 0 100px 0 0;
+    }
+
+    .footerList > ul > li {
+        list-style-type: none;
+
+    }
+
+    .footerList > ul{
+        padding: 0;
+        line-height: 1.8rem;
+
+    }
+
+    .footerList > ul > li > a{
+        text-decoration: none;
+        color: rgba(221, 217, 217, 0.747);
+        font-family: sans-serif;
+        font-size: 1rem;
+    }
+
+    .footerList > p{
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .footerSection > img{
+        height: 4rem;
+    }
+
+    .footerList{
+        margin: 0 10rem;
+    }
+
+    /* expanded menu */
+
+    .menuProductDekstop{
+        width: 9rem;
+        min-height: 3rem;
+        background-color: white;
+        z-index: 1;
+        position: absolute;
+        border-radius: 8px;
+        padding: 10px 20px;
+    }
+
+    .pTextMenuDesktop{
+        color: #000;
+        font-size: 1rem;
+    }
+
+    .pTextMenuDesktop:hover {
+        font-weight: 600;
+    }
+}

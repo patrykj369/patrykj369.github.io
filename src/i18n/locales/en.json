@@ -1,0 +1,223 @@
+{
+  "meta": {
+    "title": "Patryk Jabłoński | DevOps, Cloud & Systems Engineer",
+    "description": "Portfolio of Patryk Jabłoński, a DevOps, Cloud & Systems Engineer specializing in Microsoft Azure, Terraform, CI/CD, automation, and production environments."
+  },
+  "accessibility": {
+    "skipToContent": "Skip to content",
+    "languageSelection": "Language selection",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "openImage": "Open image preview",
+    "closeModal": "Close preview",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "orcid": "ORCID",
+    "mobileNavigation": "Mobile navigation"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "expertise": "Expertise",
+    "experience": "Experience",
+    "credentials": "Credentials",
+    "projects": "Projects",
+    "academic": "Academic",
+    "contact": "Contact",
+    "brand": "PJ | CLOUD DEVOPS"
+  },
+  "hero": {
+    "eyebrow": "AZURE CLOUD • DEVOPS • SYSTEMS",
+    "hello": "Hi, I'm",
+    "name": "Patryk Jabłoński",
+    "headline": "I design, automate and operate secure infrastructure in Microsoft Azure.",
+    "roles": [
+      "DevOps, Cloud & Systems Engineer",
+      "Academic Lecturer",
+      "PhD Student"
+    ],
+    "description": "I combine over 7 years of IT experience with hands-on work in Azure Cloud, Infrastructure as Code, CI/CD, Windows and Linux systems, and automation. I build solutions that are repeatable, secure and maintainable.",
+    "featuredProject": "View projects",
+    "messageLinkedin": "Message me on LinkedIn",
+    "location": "Nowy Sącz, Poland"
+  },
+  "intro": {
+    "title": "Deploying portfolio",
+    "subtitle": "Preparing the cloud environment",
+    "progressLabel": "Portfolio launch progress",
+    "skip": "Skip intro",
+    "stages": {
+      "azure": "Initializing infrastructure",
+      "automation": "Loading CI/CD pipeline",
+      "interface": "Deploying the portfolio interface"
+    }
+  },
+  "about": {
+    "title": "About me",
+    "subtitle": "Infrastructure, automation and ownership of production environments.",
+    "paragraph1": "I am a DevOps, Cloud & Systems Engineer focused on Microsoft Azure. I work with business-critical environments, cloud infrastructure design, deployment automation, security, and system observability.",
+    "paragraph2": "My day-to-day work combines Azure Cloud, Terraform, CI/CD, Docker, PowerShell, Bash, Windows and Linux operating systems as well as databases. I care not only about making a solution work, but also about making it repeatable, documented, secure, and easy to evolve.",
+    "paragraph3": "Alongside engineering, I teach technology related courses and conduct research focused on artificial intelligence, automation, and digital transformation.",
+    "facts": [
+      "7+ years in IT",
+      "Azure Cloud, IaC & CI/CD",
+      "Academic lecturer",
+      "Scientific publications"
+    ]
+  },
+  "expertise": {
+    "title": "Expertise",
+    "subtitle": "Technologies and practices I use to design, deploy, and maintain systems.",
+    "cards": {
+      "cloud": {
+        "title": "Azure Cloud",
+        "description": "Designing and provisioning secure Azure infrastructure through declarative configuration and reusable modules."
+      },
+      "cicd": {
+        "title": "CI/CD & Containers",
+        "description": "Automating application and infrastructure build, testing, security scanning, and deployment."
+      },
+      "ops": {
+        "title": "Systems & Operations",
+        "description": "Systems administration, production operations, monitoring, and incident response."
+      },
+      "automation": {
+        "title": "Automation, Security & Data",
+        "description": "Scripting, process automation, security controls, and database engineering."
+      }
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "Roles focused on production reliability, automation, and security engineering.",
+    "items": {
+      "lecturer": {
+        "title": "Academic Lecturer",
+        "dates": "since October 2025 (part-time)",
+        "description": "I teach courses in generative artificial intelligence, network infrastructure management, operating systems, and process automation."
+      },
+      "devops": {
+        "title": "Systems & DevOps Engineer",
+        "dates": "since April 2025",
+        "description": "I operate production environments and Azure infrastructure, build CI/CD pipelines, provision infrastructure with Terraform, automate deployments and administration, and improve system security, monitoring, availability, and performance."
+      },
+      "implementation": {
+        "title": "IT Support and Implementation Engineer",
+        "dates": "2018 to March 2025",
+        "description": "I deployed and maintained software, servers, networks, and databases, automated implementation tasks, supported clients, and prepared technical documentation and system analyses."
+      }
+    }
+  },
+  "credentials": {
+    "title": "Certifications and completed courses",
+    "subtitle": "Certifications and courses in cloud, automation, systems, and data.",
+    "certificationLinkLabel": "Open certification {{name}}",
+    "courseLinkLabel": "Open course {{name}}",
+    "certificationsTitle": "Certifications",
+    "courses": {
+      "title": "Completed courses",
+      "itemsCount": "{{count}} items",
+      "categories": {
+        "cloudDevOpsSystems": "Cloud, DevOps and systems",
+        "databasesAnalytics": "Databases and analytics",
+        "processAutomation": "Process automation"
+      }
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Practical projects demonstrating IaC, automation, security, and hands-on work with Microsoft Azure.",
+    "actions": {
+      "viewRepository": "View repository",
+      "projectGallery": "Project gallery",
+      "hideProjectGallery": "Hide gallery"
+    },
+    "featured": {
+      "tagline": "A complete DevOps workflow for a .NET application running in Microsoft Azure.",
+      "description": "This project demonstrates the complete process of designing, provisioning, securing, and deploying a cloud application. Infrastructure is created with Terraform, the application runs in Docker, and GitHub Actions handles infrastructure planning and deployment, testing, security scanning, image build, and release to Azure Container Apps.",
+      "highlights": [
+        "Modular Infrastructure as Code",
+        "OIDC authentication from GitHub Actions to Azure",
+        "Private networking for Azure SQL",
+        "Automated testing and security scanning",
+        "Controlled infrastructure and application deployment",
+        "Monitoring and centralized logs"
+      ]
+    },
+    "networkLab": {
+      "tagline": "A teaching project prepared for Network Infrastructure Management students.",
+      "description": "An Infrastructure as Code lab created as a teaching example for Network Infrastructure Management students. The project deploys an Azure Resource Group, a Virtual Network, three network segments, Network Security Groups, Windows Server virtual machines, and an Ubuntu virtual machine prepared for security monitoring with Wazuh. It demonstrates network segmentation, restricted backend access, and repeatable environment provisioning with Terraform.",
+      "highlights": [
+        "Teaching example for students",
+        "Three segment network design",
+        "Restricted backend access",
+        "Repeatable environment provisioning with Terraform"
+      ]
+    },
+    "gallery": {
+      "architecture": "Azure architecture overview and infrastructure layers",
+      "pipeline": "GitHub Actions workflow overview",
+      "application": "Guestbook application interface",
+      "terraform": "Terraform modules architecture diagram",
+      "networkLabOverview": "Azure Network Infrastructure Lab architecture overview",
+      "networkLabApplyInfra": "Infrastructure deployment view for Azure Network Infrastructure Lab"
+    }
+  },
+  "academic": {
+    "title": "Academic and research",
+    "subtitle": "A blend of production engineering practice, teaching, and scientific publishing.",
+    "education": {
+      "title": "Education",
+      "items": {
+        "phd": {
+          "title": "PhD Studies (Management and Quality)",
+          "institution": "Katowice Business University",
+          "period": "since 2025"
+        },
+        "postgraduate": {
+          "title": "Postgraduate Studies (DevOps)",
+          "institution": "WSB-NLU in Nowy Sącz",
+          "period": "2025 to 2026"
+        },
+        "mba": {
+          "title": "Master of Business Administration",
+          "institution": "WSB-NLU in Nowy Sącz",
+          "period": "2024 to 2025"
+        },
+        "master": {
+          "title": "Master of Management (Project Management)",
+          "institution": "WSB-NLU in Nowy Sącz",
+          "period": "2023 to 2025"
+        },
+        "engineer": {
+          "title": "Engineer's Degree in Computer Science and Econometrics",
+          "institution": "University DSW Ideis Kraków",
+          "period": "2019 to 2023"
+        }
+      }
+    },
+    "teaching": {
+      "title": "Courses taught",
+      "areas": [
+        "Generative AI",
+        "Network Infrastructure",
+        "Operating Systems",
+        "Process Automation"
+      ]
+    },
+    "publications": {
+      "title": "Publications",
+      "read": "Read publication",
+      "viewOrcid": "View ORCID profile"
+    }
+  },
+  "contact": {
+    "title": "Let's talk about Azure, DevOps, and automation.",
+    "description": "The best way to contact me is through LinkedIn.",
+    "button": "Message me on LinkedIn"
+  },
+  "footer": {
+    "copyright": "© 2026 Patryk Jabłoński",
+    "backToTop": "Back to top"
+  }
+}

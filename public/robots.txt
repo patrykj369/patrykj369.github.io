@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://patrykj369.github.io/sitemap.xml

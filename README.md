@@ -1,4 +1,4 @@
-# PJ / Cloud Ops Portfolio
+# PJ | DevOps Portfolio
 
 ![Hero preview](public/og-cover.png)
 

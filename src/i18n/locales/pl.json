@@ -45,7 +45,7 @@
     "skip": "Pomiń intro",
     "stages": {
       "azure": "Inicjalizacja infrastruktury",
-      "automation": "Uruchamianie pipeline'a CI/CD",
+      "automation": "Uruchamianie potoku CI/CD",
       "interface": "Wdrażanie interfejsu portfolio"
     }
   },

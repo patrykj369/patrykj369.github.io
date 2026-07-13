@@ -26,11 +26,11 @@ export const HeroSection = () => {
             {t("hero.headline")}
           </p>
           <ul className="mt-6 flex flex-wrap gap-2">
-            {roles.map((role) => (
+            {/* {roles.map((role) => (
               <li key={role}>
                 <StatusBadge text={role} />
               </li>
-            ))}
+            ))} */}
           </ul>
           <p className="mt-6 max-w-2xl text-[var(--color-text-muted)]">
             {t("hero.description")}

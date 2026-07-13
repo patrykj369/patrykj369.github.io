@@ -24,7 +24,14 @@ export const Header = ({ activeSection }: HeaderProps) => {
             href="#home"
             className="font-mono text-sm tracking-[0.2em] text-[var(--color-text)]"
           >
-            {t("navigation.brand")}
+            <img
+              src="images/cloud-home.svg"
+              alt="Home"
+              className="h-8 w-8 object-contain sm:h-9 sm:w-9 lg:h-10 lg:w-10"
+              loading="eager"
+              decoding="async"
+            />
+            {/* {t("navigation.brand")} */}
           </a>
           <div className="hidden items-center gap-6 xl:flex">
             <nav className="flex items-center gap-2" aria-label="primary">

@@ -80,13 +80,13 @@ export const projects: PortfolioProject[] = [
     ],
     images: [
       {
-        src: "/projects/guestbook/network-lab/project-overview.webp",
+        src: "/projects/network-lab/project-overview.webp",
         altKey: "projects.gallery.networkLabOverview",
         width: 1436,
         height: 1043,
       },
       {
-        src: "/projects/guestbook/network-lab/apply-infra.webp",
+        src: "/projects/network-lab/apply-infra.webp",
         altKey: "projects.gallery.networkLabApplyInfra",
         width: 993,
         height: 529,

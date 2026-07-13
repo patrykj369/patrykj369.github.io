@@ -5,7 +5,7 @@
 Adres produkcyjny:
 
 ```text
-https://patrykj369.github.io/
+https://patrykjablonski.cloud/
 ```
 
 Projekt jest publicznym, dwujęzycznym portfolio Patryka Jabłońskiego, DevOps, Cloud & Systems Engineera specjalizującego się w Microsoft Azure.
@@ -354,7 +354,7 @@ base: "/";
 Nie używaj:
 
 ```ts
-base: "/patrykj369.github.io/";
+base: "/patrykjablonski.cloud/";
 ```
 
 Deployment ma:

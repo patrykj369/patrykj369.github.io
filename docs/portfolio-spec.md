@@ -263,7 +263,7 @@ Drobne różnice w podziale plików są dozwolone, ale:
 
 ## 5. Konfiguracja Vite i GitHub Pages
 
-Repozytorium nazywa się dokładnie `patrykj369.github.io`, dlatego witryna działa w katalogu głównym domeny.
+Repozytorium nazywa się dokładnie `patrykjablonski.cloud`, dlatego witryna działa w katalogu głównym domeny.
 
 W `vite.config.ts` ustaw:
 
@@ -285,7 +285,7 @@ export default defineConfig({
 Nie ustawiaj:
 
 ```ts
-base: "/patrykj369.github.io/";
+base: "/patrykjablonski.cloud/";
 ```
 
 To byłoby błędne dla repozytorium użytkownika GitHub Pages.
@@ -538,8 +538,8 @@ Kolejność:
 Przykładowe adresy:
 
 ```text
-https://patrykj369.github.io/?lang=pl
-https://patrykj369.github.io/?lang=en
+https://patrykjablonski.cloud/?lang=pl
+https://patrykjablonski.cloud/?lang=en
 ```
 
 ### 8.4. Zachowanie przełącznika
@@ -2401,10 +2401,10 @@ Portfolio of Patryk Jabłoński: a DevOps, Cloud & Systems Engineer specializing
 Dodaj:
 
 - `og:type=website`,
-- `og:url=https://patrykj369.github.io/`,
+- `og:url=https://patrykjablonski.cloud/`,
 - `og:title`,
 - `og:description`,
-- `og:image=https://patrykj369.github.io/og-cover.png`,
+- `og:image=https://patrykjablonski.cloud/og-cover.png`,
 - `twitter:card=summary_large_image`.
 
 `og-cover.png`:
@@ -2425,7 +2425,7 @@ Dodaj `Person`:
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Patryk Jabłoński",
-  "url": "https://patrykj369.github.io/",
+  "url": "https://patrykjablonski.cloud/",
   "jobTitle": "DevOps, Cloud & Systems Engineer",
   "sameAs": [
     "https://github.com/patrykj369",
@@ -2458,7 +2458,7 @@ Nie umieszczaj w JSON-LD telefonu ani e-maila.
 User-agent: *
 Allow: /
 
-Sitemap: https://patrykj369.github.io/sitemap.xml
+Sitemap: https://patrykjablonski.cloud/sitemap.xml
 ```
 
 `sitemap.xml` ma zawierać stronę główną.
@@ -2805,7 +2805,7 @@ export const profile = {
   githubUrl: "https://github.com/patrykj369",
   linkedinUrl: "https://www.linkedin.com/in/patryk-jablonski",
   orcidUrl: "https://orcid.org/0009-0000-9122-6862",
-  siteUrl: "https://patrykj369.github.io/",
+  siteUrl: "https://patrykjablonski.cloud/",
 } as const;
 ```
 

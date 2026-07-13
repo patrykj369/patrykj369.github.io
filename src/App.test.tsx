@@ -124,7 +124,7 @@ describe("Portfolio app", () => {
 
     expect(
       await screen.findByRole("heading", {
-        name: "Let's talk about Azure, DevOps, and automation.",
+        name: "Let's talk about Cloud, DevOps, infrastructure, automation, AI, academic cooperation or technology-driven projects.",
       }),
     ).toBeInTheDocument();
     expect(
@@ -136,7 +136,7 @@ describe("Portfolio app", () => {
     fireEvent.click(screen.getAllByRole("button", { name: "PL" })[0]);
     expect(
       await screen.findByRole("heading", {
-        name: "Porozmawiajmy o Azure, DevOps i automatyzacji.",
+        name: "Porozmawiajmy o Chmurze, DevOps, infrastrukturze, automatyzacji, AI, współpracy akademickiej lub projektach technologicznych.",
       }),
     ).toBeInTheDocument();
     expect(document.documentElement.lang).toBe("pl");

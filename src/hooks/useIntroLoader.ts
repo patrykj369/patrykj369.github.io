@@ -2,8 +2,8 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { usePrefersReducedMotion } from "./usePrefersReducedMotion";
 
 const INTRO_SESSION_KEY = "portfolio.intro.seen";
-const INTRO_DURATION_MS = 2800;
-const INTRO_TIMEOUT_MS = 3500;
+const INTRO_DURATION_MS = 4500;
+const INTRO_TIMEOUT_MS = 5000;
 const INTRO_EXIT_MS = 260;
 
 interface UseIntroLoaderResult {

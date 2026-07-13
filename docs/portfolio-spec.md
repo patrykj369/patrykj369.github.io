@@ -460,7 +460,7 @@ Sticky header z lekkim blur.
 Po lewej użyj marki:
 
 ```text
-PJ | CLOUD DEVOPS
+PJ | DEVOPS
 ```
 
 Można użyć monogramu `PJ` w zaokrąglonym kwadracie, a pełny napis pokazywać od większych szerokości.
@@ -1781,7 +1781,7 @@ Ta sekcja ma być prosta i mocna.
 Nagłówek:
 
 ```text
-Porozmawiajmy o Azure, DevOps i automatyzacji.
+Porozmawiajmy o Chmurze, DevOps, infrastrukturze, automatyzacji, AI, współpracy akademickiej lub projektach technologicznych.
 ```
 
 Opis:
@@ -1801,7 +1801,7 @@ Napisz do mnie na LinkedIn
 Heading:
 
 ```text
-Let's talk about Azure, DevOps, and automation.
+Let's talk about Cloud, DevOps, infrastructure, automation, AI, academic cooperation or technology-driven projects.
 ```
 
 Description:
@@ -1856,13 +1856,6 @@ Elementy:
 - LinkedIn,
 - ORCID,
 - link `Wróć na górę` lub `Back to top`.
-
-Usuń tekst:
-
-```text
-Zaprojektowane i zbudowane jako statyczna aplikacja React wdrażana przez GitHub Actions.
-Designed and built as a static React application deployed with GitHub Actions.
-```
 
 Nie zastępuj go innym opisem technologicznym. Nie umieszczaj kontaktowego e-maila ani telefonu.
 
@@ -1996,7 +1989,7 @@ Wszystkie teksty pochodzą z i18next. Nie pokazuj AWS, `Amazon Web Services`, fi
 
 #### Przebieg animacji
 
-Cała sekwencja powinna trwać około 2.4 do 3 sekund:
+Cała sekwencja powinna trwać około 4 do 5 sekund:
 
 - etap pierwszy odpowiada zakresowi od 0 do około 33 procent,
 - etap drugi odpowiada zakresowi od około 34 do 66 procent,
@@ -2020,7 +2013,7 @@ Nie twórz wielu niezależnych `setInterval`. Preferuj jedną oś czasu Motion, 
 - zmiana języka nie uruchamia intro ponownie,
 - kliknięcie linku kotwicowego nie uruchamia intro ponownie,
 - nie zapisuj w tym celu danych osobowych,
-- zastosuj bezpieczny timeout maksymalnie około 3.5 sekundy, aby błąd animacji nie mógł na stałe zasłonić strony.
+- zastosuj bezpieczny timeout maksymalnie około 35 sekund, aby błąd animacji nie mógł na stałe zasłonić strony.
 
 `sessionStorage` jest dozwolone wyłącznie dla technicznej flagi wyświetlenia intro.
 
@@ -3094,7 +3087,7 @@ Realizuj zmiany w tej kolejności.
 
 ### Etap 3: hero i nawigacja
 
-- zmień markę na `PJ | CLOUD DEVOPS`,
+- zmień markę na `PJ | DEVOPS`,
 - dodaj `AZURE CLOUD` w etykiecie hero,
 - usuń obecną implementację `HeroTechnologyShowcase` oraz pozostałości wadliwego `TechnologyOrbit`,
 - dodaj komponent `HeroTechnologyOrbit`,
@@ -3185,7 +3178,7 @@ Najważniejszy kierunek:
 - czytelność oraz ludzki charakter klasycznej strony osobistej,
 - duża fotografia i lekka prezentacja technologii zamiast ciężkiego diagramu,
 - krótki ekran startowy Azure Cloud i spójny system mikrointerakcji,
-- własna tożsamość wizualna `PJ | CLOUD DEVOPS`.
+- własna tożsamość wizualna `PJ | DEVOPS`.
 
 ---
 

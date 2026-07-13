@@ -24,7 +24,7 @@
     "projects": "Projects",
     "academic": "Academic",
     "contact": "Contact",
-    "brand": "PJ | CLOUD DEVOPS"
+    "brand": "PJ | DEVOPS"
   },
   "hero": {
     "eyebrow": "AZURE CLOUD • DEVOPS • SYSTEMS",
@@ -212,7 +212,7 @@
     }
   },
   "contact": {
-    "title": "Let's talk about Azure, DevOps, and automation.",
+    "title": "Let's talk about Cloud, DevOps, infrastructure, automation, AI, academic cooperation or technology-driven projects.",
     "description": "The best way to contact me is through LinkedIn.",
     "button": "Message me on LinkedIn"
   },

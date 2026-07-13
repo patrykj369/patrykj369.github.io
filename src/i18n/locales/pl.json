@@ -24,7 +24,7 @@
     "projects": "Projekty",
     "academic": "Nauka",
     "contact": "Kontakt",
-    "brand": "PJ | CLOUD DEVOPS"
+    "brand": "PJ | DEVOPS"
   },
   "hero": {
     "eyebrow": "AZURE CLOUD • DEVOPS • SYSTEMS",
@@ -97,12 +97,12 @@
         "description": "Prowadzę zajęcia z zakresu generatywnej sztucznej inteligencji, infrastruktury sieciowej, systemów operacyjnych i automatyzacji procesów."
       },
       "devops": {
-        "title": "Systems & DevOps Engineer",
+        "title": "Inżynier systemowy & DevOps",
         "dates": "od kwietnia 2025 (obecnie)",
         "description": "Utrzymuję środowiska produkcyjne i infrastrukturę Azure, tworzę pipeline'y CI/CD, rozwijam infrastrukturę w Terraformie, automatyzuję wdrożenia i administrację oraz pracuję nad bezpieczeństwem, monitoringiem, dostępnością i wydajnością systemów."
       },
       "implementation": {
-        "title": "IT Support and Implementation Engineer",
+        "title": "Inżynier ds. wsparcia i wdrożeń",
         "dates": "od 2018 do marca 2025",
         "description": "Wdrażałem i utrzymywałem oprogramowanie, serwery, sieci i bazy danych, automatyzowałem zadania wdrożeniowe, wspierałem klientów oraz przygotowywałem dokumentację i analizy techniczne."
       }
@@ -212,7 +212,7 @@
     }
   },
   "contact": {
-    "title": "Porozmawiajmy o Azure, DevOps i automatyzacji.",
+    "title": "Porozmawiajmy o Chmurze, DevOps, infrastrukturze, automatyzacji, AI, współpracy akademickiej lub projektach technologicznych.",
     "description": "Najlepszym sposobem kontaktu ze mną jest wiadomość na LinkedIn.",
     "button": "Napisz do mnie na LinkedIn"
   },

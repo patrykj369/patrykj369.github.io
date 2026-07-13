@@ -7,7 +7,7 @@ import { SocialLinks } from "../components/ui/SocialLinks";
 
 export const HeroSection = () => {
   const { t } = useTranslation();
-  const roles = t("hero.roles", { returnObjects: true }) as string[];
+  // const roles = t("hero.roles", { returnObjects: true }) as string[];
 
   return (
     <section id="home" className="hero-full-viewport pb-16 pt-10 md:py-0">

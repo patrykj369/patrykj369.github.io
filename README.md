@@ -86,11 +86,3 @@ Language resolution order:
 Expected path for profile photo: `public/images/profile.webp`.
 
 If the file is missing, the app uses `public/images/profile-fallback.svg` automatically.
-
-## Privacy
-
-The public portfolio intentionally does not expose a phone number, email address, contact form, or downloadable full CV. Contact is handled through LinkedIn.
-
-## License
-
-See `LICENSE`.

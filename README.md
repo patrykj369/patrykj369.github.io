@@ -41,7 +41,7 @@ A bilingual (PL/EN) Azure-focused portfolio website for Patryk Jabłoński, buil
 
 ## Local Development
 
-Required runtime: Node.js 24.18.0 LTS.
+Required runtime: Node.js 24.0 LTS.
 
 ```bash
 npm install

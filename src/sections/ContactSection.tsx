@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { MessageCircle } from "lucide-react";
+import { AtSign, MessageCircle } from "lucide-react";
 import { profile } from "../data/profile";
 import { Container } from "../components/common/Container";
 import { InteractiveLink } from "../components/common/InteractiveButton";
@@ -22,20 +22,34 @@ export const ContactSection = () => {
           <p className="mx-auto mt-4 max-w-2xl text-[var(--color-text-muted)]">
             {t("contact.description")}
           </p>
-          <InteractiveLink
-            href={profile.linkedinUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            variant="secondary"
-            className="group/linkedin mx-auto mt-6 w-full sm:w-auto"
-          >
-            {t("contact.button")}
-            <MessageCircle
-              size={16}
-              className="text-[var(--color-cyan)] transition-[transform,filter] duration-200 ease-out [@media(hover:hover)_and_(pointer:fine)]:group-hover/linkedin:translate-x-[2px] [@media(hover:hover)_and_(pointer:fine)]:group-hover/linkedin:drop-shadow-[0_0_8px_rgba(86,204,242,0.42)]"
-              aria-hidden="true"
-            />
-          </InteractiveLink>
+          <div className="mx-auto mt-6 flex w-full max-w-3xl flex-col items-stretch justify-center gap-3 sm:flex-row">
+            <InteractiveLink
+              href={profile.linkedinUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="secondary"
+              className="group/linkedin w-full sm:min-w-[15rem]"
+            >
+              {t("contact.button")}
+              <MessageCircle
+                size={16}
+                className="text-[var(--color-cyan)] transition-[transform,filter] duration-200 ease-out [@media(hover:hover)_and_(pointer:fine)]:group-hover/linkedin:translate-x-[2px] [@media(hover:hover)_and_(pointer:fine)]:group-hover/linkedin:drop-shadow-[0_0_8px_rgba(86,204,242,0.42)]"
+                aria-hidden="true"
+              />
+            </InteractiveLink>
+            <InteractiveLink
+              href={profile.emailUrl}
+              variant="secondary"
+              className="group/email w-full sm:min-w-[15rem]"
+            >
+              {t("contact.emailButton")}
+              <AtSign
+                size={16}
+                className="text-[var(--color-cyan)] transition-[transform,filter] duration-200 ease-out [@media(hover:hover)_and_(pointer:fine)]:group-hover/email:translate-x-[2px] [@media(hover:hover)_and_(pointer:fine)]:group-hover/email:drop-shadow-[0_0_8px_rgba(86,204,242,0.42)]"
+                aria-hidden="true"
+              />
+            </InteractiveLink>
+          </div>
           <div className="mt-6 flex justify-center">
             <SocialLinks />
           </div>

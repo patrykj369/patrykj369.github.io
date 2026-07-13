@@ -595,7 +595,7 @@ Elementy:
 1. Mała techniczna etykieta w obu językach:
 
 ```text
-AZURE CLOUD • DEVOPS • SYSTEMS
+AZURE • DEVOPS • SYSTEMS
 ```
 
 2. Powitanie:
@@ -623,13 +623,13 @@ Patryk Jabłoński
 Polski:
 
 ```text
-Projektuję, automatyzuję i utrzymuję bezpieczną infrastrukturę w Microsoft Azure.
+Inżynier DevOps i systemów specjalizujący się w Microsoft Azure..
 ```
 
 Angielski:
 
 ```text
-I design, automate and operate secure infrastructure in Microsoft Azure.
+DevOps & Systems Engineer focused on Microsoft Azure.
 ```
 
 5. Role:
@@ -637,7 +637,7 @@ I design, automate and operate secure infrastructure in Microsoft Azure.
 Polski:
 
 ```text
-Inżynier DevOps, Cloud & Systems
+Inżynier
 Wykładowca akademicki
 Doktorant
 ```
@@ -645,7 +645,7 @@ Doktorant
 Angielski:
 
 ```text
-DevOps, Cloud & Systems Engineer
+Engineer
 Academic Lecturer
 PhD Student
 ```

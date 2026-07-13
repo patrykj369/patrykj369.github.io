@@ -124,11 +124,11 @@ describe("Portfolio app", () => {
 
     expect(
       await screen.findByRole("heading", {
-        name: "Let's talk about Cloud, DevOps, infrastructure, automation, AI, academic cooperation or technology-driven projects.",
+        name: "Projects",
       }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole("heading", { name: "Projects" }),
+      screen.getByRole("link", { name: "Contact me" }),
     ).toBeInTheDocument();
     expect(document.documentElement.lang).toBe("en");
     expect(window.location.search).toContain("lang=en");
@@ -136,10 +136,31 @@ describe("Portfolio app", () => {
     fireEvent.click(screen.getAllByRole("button", { name: "PL" })[0]);
     expect(
       await screen.findByRole("heading", {
-        name: "Porozmawiajmy o Chmurze, DevOps, infrastrukturze, automatyzacji, AI, współpracy akademickiej lub projektach technologicznych.",
+        name: "Projekty",
       }),
     ).toBeInTheDocument();
     expect(document.documentElement.lang).toBe("pl");
+  });
+
+  it("renders localized hero contact CTA and points it to #contact", async () => {
+    sessionStorage.setItem("portfolio.intro.seen", "true");
+    render(<App />);
+
+    const plHeroContact = screen.getByRole("link", {
+      name: "Napisz do mnie",
+    });
+    expect(plHeroContact).toHaveAttribute("href", "#contact");
+    expect(plHeroContact).not.toHaveAttribute(
+      "href",
+      "https://www.linkedin.com/in/patryk-jablonski",
+    );
+
+    fireEvent.click(screen.getAllByRole("button", { name: "EN" })[0]);
+
+    const enHeroContact = await screen.findByRole("link", {
+      name: "Contact me",
+    });
+    expect(enHeroContact).toHaveAttribute("href", "#contact");
   });
 
   it("stores language selection in localStorage", async () => {
@@ -152,7 +173,7 @@ describe("Portfolio app", () => {
     });
   });
 
-  it("has LinkedIn and repository links, and no tel/mailto links", () => {
+  it("has LinkedIn, repository, and email links, and no tel links", () => {
     sessionStorage.setItem("portfolio.intro.seen", "true");
     render(<App />);
 
@@ -166,8 +187,73 @@ describe("Portfolio app", () => {
     expect(hrefs).toContain(
       "https://github.com/patrykj369/zis-azure-terraform",
     );
+    expect(hrefs).toContain("mailto:contact@patrykjablonski.cloud");
     expect(hrefs.some((href) => href?.startsWith("tel:"))).toBe(false);
-    expect(hrefs.some((href) => href?.startsWith("mailto:"))).toBe(false);
+  });
+
+  it("renders contact email button in PL and EN with exact mailto address", async () => {
+    sessionStorage.setItem("portfolio.intro.seen", "true");
+    render(<App />);
+
+    const plEmailButton = screen.getByRole("link", {
+      name: "Wyślij do mnie e-mail",
+    });
+    expect(plEmailButton).toHaveAttribute(
+      "href",
+      "mailto:contact@patrykjablonski.cloud",
+    );
+
+    fireEvent.click(screen.getAllByRole("button", { name: "EN" })[0]);
+
+    const enEmailButton = await screen.findByRole("link", {
+      name: "Send me an email",
+    });
+    expect(enEmailButton).toHaveAttribute(
+      "href",
+      "mailto:contact@patrykjablonski.cloud",
+    );
+  });
+
+  it("renders four social icons in home, contact, and footer", () => {
+    sessionStorage.setItem("portfolio.intro.seen", "true");
+    const { container } = render(<App />);
+
+    expect(container.querySelectorAll("#home a.social-link")).toHaveLength(4);
+    expect(container.querySelectorAll("#contact a.social-link")).toHaveLength(
+      4,
+    );
+    expect(container.querySelectorAll("footer a.social-link")).toHaveLength(4);
+  });
+
+  it("updates translated email icon labels and titles when switching language", async () => {
+    sessionStorage.setItem("portfolio.intro.seen", "true");
+    render(<App />);
+
+    const plEmailIcons = screen.getAllByRole("link", {
+      name: "Mail",
+    });
+    expect(plEmailIcons).toHaveLength(3);
+    plEmailIcons.forEach((icon) => {
+      expect(icon).toHaveAttribute("title", "Mail");
+      expect(icon).toHaveAttribute(
+        "href",
+        "mailto:contact@patrykjablonski.cloud",
+      );
+    });
+
+    fireEvent.click(screen.getAllByRole("button", { name: "EN" })[0]);
+
+    const enEmailIcons = await screen.findAllByRole("link", {
+      name: "Mail",
+    });
+    expect(enEmailIcons).toHaveLength(3);
+    enEmailIcons.forEach((icon) => {
+      expect(icon).toHaveAttribute("title", "Mail");
+      expect(icon).toHaveAttribute(
+        "href",
+        "mailto:contact@patrykjablonski.cloud",
+      );
+    });
   });
 
   it("resolves initial language from URL first", () => {

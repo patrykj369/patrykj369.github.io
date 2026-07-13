@@ -1,6 +1,5 @@
 import { ArrowDownRight, MessageCircle } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { profile } from "../../data/profile";
 import { InteractiveLink } from "../common/InteractiveButton";
 
 export const HeroActions = () => {
@@ -21,13 +20,11 @@ export const HeroActions = () => {
         />
       </InteractiveLink>
       <InteractiveLink
-        href={profile.linkedinUrl}
-        target="_blank"
-        rel="noopener noreferrer"
+        href="#contact"
         variant="secondary"
         className="group/linkedin w-full sm:w-auto"
       >
-        {t("hero.messageLinkedin")}
+        {t("hero.contactButton")}
         <MessageCircle
           size={16}
           className="text-[var(--color-cyan)] transition-[transform,filter] duration-200 ease-out [@media(hover:hover)_and_(pointer:fine)]:group-hover/linkedin:translate-x-[2px] [@media(hover:hover)_and_(pointer:fine)]:group-hover/linkedin:drop-shadow-[0_0_8px_rgba(86,204,242,0.42)]"

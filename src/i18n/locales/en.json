@@ -13,6 +13,7 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "orcid": "ORCID",
+    "email": "Mail",
     "mobileNavigation": "Mobile navigation"
   },
   "navigation": {
@@ -27,18 +28,14 @@
     "brand": "PJ | DEVOPS"
   },
   "hero": {
-    "eyebrow": "AZURE CLOUD • DEVOPS • SYSTEMS",
+    "eyebrow": "AZURE • DEVOPS • SYSTEMS",
     "hello": "Hi, I'm",
     "name": "Patryk Jabłoński",
-    "headline": "I design, automate and operate secure infrastructure in Microsoft Azure.",
-    "roles": [
-      "DevOps, Cloud & Systems Engineer",
-      "Academic Lecturer",
-      "PhD Student"
-    ],
-    "description": "I combine over 7 years of IT experience with hands-on work in Azure Cloud, Infrastructure as Code, CI/CD, Windows and Linux systems, and automation. I build solutions that are repeatable, secure and maintainable.",
+    "headline": "DevOps & Systems Engineer focused on Microsoft Azure.",
+    "roles": ["Engineer", "Academic Lecturer", "PhD Student"],
+    "description": "I automate infrastructure and deployments with Terraform, CI/CD, PowerShell and Bash. I combine 7+ years in IT with hands-on ownership of Windows and Linux production environments.",
     "featuredProject": "View projects",
-    "messageLinkedin": "Message me on LinkedIn",
+    "contactButton": "Contact me",
     "location": "Nowy Sącz, Poland"
   },
   "intro": {
@@ -55,9 +52,9 @@
   "about": {
     "title": "About me",
     "subtitle": "Infrastructure, automation and ownership of production environments.",
-    "paragraph1": "I am a DevOps, Cloud & Systems Engineer focused on Microsoft Azure. I work with business-critical environments, cloud infrastructure design, deployment automation, security, and system observability.",
+    "paragraph1": "I work as a Systems and DevOps Engineer, specializing in Azure. I specialize in maintaining business-critical environments, designing cloud infrastructure, automating deployments, and improving system security and observability.",
     "paragraph2": "My day-to-day work combines Azure Cloud, Terraform, CI/CD, Docker, PowerShell, Bash, Windows and Linux operating systems as well as databases. I care not only about making a solution work, but also about making it repeatable, documented, secure, and easy to evolve.",
-    "paragraph3": "Alongside engineering, I teach technology related courses and conduct research focused on artificial intelligence, automation, and digital transformation.",
+    "paragraph3": "Alongside engineering, I teach technology-related courses and conduct research focused on artificial intelligence, automation, and digital transformation.",
     "facts": [
       "7+ years in IT",
       "Azure Cloud, IaC & CI/CD",
@@ -89,7 +86,7 @@
   },
   "experience": {
     "title": "Experience",
-    "subtitle": "Roles focused on production reliability, automation, and security engineering.",
+    "subtitle": "Roles focused on production reliability, automation, and security.",
     "items": {
       "lecturer": {
         "title": "Academic Lecturer",
@@ -212,9 +209,10 @@
     }
   },
   "contact": {
-    "title": "Let's talk about Cloud, DevOps, infrastructure, automation, AI, academic cooperation or technology-driven projects.",
+    "title": "Let's talk about cloud, DevOps, infrastructure, automation, academic cooperation or technology-driven projects.",
     "description": "The best way to contact me is through LinkedIn.",
-    "button": "Message me on LinkedIn"
+    "button": "Message me on LinkedIn",
+    "emailButton": "Send me an email"
   },
   "footer": {
     "copyright": "© 2026 Patryk Jabłoński",

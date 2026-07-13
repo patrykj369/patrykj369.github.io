@@ -2,7 +2,7 @@
 
 ![Hero preview](public/og-cover.png)
 
-Production URL: https://patrykj369.github.io/
+Production URL: https://patrykjablonski.cloud
 
 ## Overview
 

@@ -86,7 +86,7 @@
   },
   "experience": {
     "title": "Experience",
-    "subtitle": "Roles focused on production reliability, automation, and security.",
+    "subtitle": "Professional and academic experience across infrastructure, systems, cloud and automation.",
     "items": {
       "lecturer": {
         "title": "Academic Lecturer",
@@ -115,7 +115,7 @@
       "title": "Completed courses",
       "itemsCount": "{{count}} items",
       "categories": {
-        "cloudDevOpsSystems": "Cloud, DevOps and systems",
+        "cloudDevOpsSystems": "Cloud, DevOps and operating systems",
         "databasesAnalytics": "Databases and analytics",
         "processAutomation": "Process automation"
       }
@@ -123,33 +123,21 @@
   },
   "projects": {
     "title": "Projects",
-    "subtitle": "Practical projects demonstrating IaC, automation, security, and hands-on work with Microsoft Azure.",
+    "subtitle": "Practical projects covering cloud infrastructure, IaC, CI/CD, automation and security.",
     "actions": {
       "viewRepository": "View repository",
       "projectGallery": "Project gallery",
       "hideProjectGallery": "Hide gallery"
     },
     "featured": {
-      "tagline": "A complete DevOps workflow for a .NET application running in Microsoft Azure.",
-      "description": "This project demonstrates the complete process of designing, provisioning, securing, and deploying a cloud application. Infrastructure is created with Terraform, the application runs in Docker, and GitHub Actions handles infrastructure planning and deployment, testing, security scanning, image build, and release to Azure Container Apps.",
-      "highlights": [
-        "Modular Infrastructure as Code",
-        "OIDC authentication from GitHub Actions to Azure",
-        "Private networking for Azure SQL",
-        "Automated testing and security scanning",
-        "Controlled infrastructure and application deployment",
-        "Monitoring and centralized logs"
-      ]
+      "title": "Azure Terraform Docker Guestbook (Under development)",
+      "tagline": "A complete CI/CD process for a containerized .NET application deployed to Microsoft Azure.",
+      "description": "This project demonstrates the complete process of designing, provisioning, securing, and deploying a cloud application. Infrastructure is created with Terraform, the application runs in Docker, and GitHub Actions handles infrastructure planning and deployment, testing, security scanning, image build, and release to Azure Container Apps."
     },
     "networkLab": {
+      "title": "Azure Network Infrastructure Lab (Under development)",
       "tagline": "A teaching project prepared for Network Infrastructure Management students.",
-      "description": "An Infrastructure as Code lab created as a teaching example for Network Infrastructure Management students. The project deploys an Azure Resource Group, a Virtual Network, three network segments, Network Security Groups, Windows Server virtual machines, and an Ubuntu virtual machine prepared for security monitoring with Wazuh. It demonstrates network segmentation, restricted backend access, and repeatable environment provisioning with Terraform.",
-      "highlights": [
-        "Teaching example for students",
-        "Three segment network design",
-        "Restricted backend access",
-        "Repeatable environment provisioning with Terraform"
-      ]
+      "description": "An Infrastructure as Code lab created as a teaching example for Network Infrastructure Management students. The project deploys an Azure Resource Group, a Virtual Network, three network segments, Network Security Groups, Windows Server virtual machines, and an Ubuntu virtual machine prepared for security monitoring with Wazuh. It demonstrates network segmentation, restricted backend access, and repeatable environment provisioning with Terraform."
     },
     "gallery": {
       "architecture": "Azure architecture overview and infrastructure layers",
@@ -162,7 +150,7 @@
   },
   "academic": {
     "title": "Academic and research",
-    "subtitle": "A blend of production engineering practice, teaching, and scientific publishing.",
+    "subtitle": "Combining engineering practice with teaching and academic publications.",
     "education": {
       "title": "Education",
       "items": {

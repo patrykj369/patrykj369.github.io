@@ -1,6 +1,6 @@
 export interface PortfolioProject {
   id: string;
-  title: string;
+  // title: string;
   translationKey: string;
   repoUrl: string;
   technologies: string[];
@@ -15,7 +15,7 @@ export interface PortfolioProject {
 export const projects: PortfolioProject[] = [
   {
     id: "azure-terraform-docker-guestbook",
-    title: "Azure Terraform Docker Guestbook",
+    // title: "Azure Terraform Docker Guestbook",
     translationKey: "projects.featured",
     repoUrl: "https://github.com/patrykj369/azure-terraform-docker-guestbook",
     technologies: [
@@ -65,7 +65,7 @@ export const projects: PortfolioProject[] = [
   },
   {
     id: "azure-network-infrastructure-lab",
-    title: "Azure Network Infrastructure Lab",
+    // title: "Azure Network Infrastructure Lab",
     translationKey: "projects.networkLab",
     repoUrl: "https://github.com/patrykj369/zis-azure-terraform",
     technologies: [

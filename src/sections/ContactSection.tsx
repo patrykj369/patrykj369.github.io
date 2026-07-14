@@ -50,9 +50,7 @@ export const ContactSection = () => {
               />
             </InteractiveLink>
           </div>
-          <div className="mt-6 flex justify-center">
-            <SocialLinks />
-          </div>
+          <div className="mt-6 flex justify-center"></div>
         </div>
       </Container>
     </SectionReveal>

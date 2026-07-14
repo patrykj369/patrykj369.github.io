@@ -214,14 +214,11 @@ describe("Portfolio app", () => {
     );
   });
 
-  it("renders four social icons in home, contact, and footer", () => {
+  it("renders four social icons in home and footer", () => {
     sessionStorage.setItem("portfolio.intro.seen", "true");
     const { container } = render(<App />);
 
     expect(container.querySelectorAll("#home a.social-link")).toHaveLength(4);
-    expect(container.querySelectorAll("#contact a.social-link")).toHaveLength(
-      4,
-    );
     expect(container.querySelectorAll("footer a.social-link")).toHaveLength(4);
   });
 
@@ -232,7 +229,7 @@ describe("Portfolio app", () => {
     const plEmailIcons = screen.getAllByRole("link", {
       name: "Mail",
     });
-    expect(plEmailIcons).toHaveLength(3);
+    expect(plEmailIcons).toHaveLength(2);
     plEmailIcons.forEach((icon) => {
       expect(icon).toHaveAttribute("title", "Mail");
       expect(icon).toHaveAttribute(
@@ -246,7 +243,7 @@ describe("Portfolio app", () => {
     const enEmailIcons = await screen.findAllByRole("link", {
       name: "Mail",
     });
-    expect(enEmailIcons).toHaveLength(3);
+    expect(enEmailIcons).toHaveLength(2);
     enEmailIcons.forEach((icon) => {
       expect(icon).toHaveAttribute("title", "Mail");
       expect(icon).toHaveAttribute(
@@ -300,7 +297,7 @@ describe("Portfolio app", () => {
       screen.getByText("MTA 98-381: Introduction to Programming Using Python"),
     ).toBeInTheDocument();
     expect(
-      screen.getAllByText("Cloud, DevOps i systemy").length,
+      screen.getAllByText("Chmura, DevOps i systemy operacyjne").length,
     ).toBeGreaterThan(0);
     expect(
       screen.getAllByText("Bazy danych i analityka").length,
@@ -412,9 +409,6 @@ describe("Portfolio app", () => {
     sessionStorage.setItem("portfolio.intro.seen", "true");
     render(<App />);
 
-    expect(
-      screen.getByText("Azure Network Infrastructure Lab"),
-    ).toBeInTheDocument();
     expect(
       screen.getAllByRole("button", { name: "Galeria projektu" }),
     ).toHaveLength(2);

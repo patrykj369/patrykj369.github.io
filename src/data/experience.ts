@@ -16,7 +16,7 @@ export const experienceItems: ExperienceItem[] = [
     descriptionKey: "experience.items.lecturer.description",
     tags: [
       "Generative AI",
-      "Network Infrastructure",
+      "Network Infrastructure Management",
       "Operating Systems",
       "Process Automation",
     ],

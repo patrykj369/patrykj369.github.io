@@ -86,12 +86,12 @@
   },
   "experience": {
     "title": "Doświadczenie",
-    "subtitle": "Role skoncentrowane na niezawodności środowisk, automatyzacji i bezpieczeństwie.",
+    "subtitle": "Doświadczenie zawodowe i dydaktyczne w obszarze infrastruktury, systemów, chmury i automatyzacji.",
     "items": {
       "lecturer": {
         "title": "Wykładowca akademicki",
         "dates": "od października 2025 (obecnie, część etatu)",
-        "description": "Prowadzę zajęcia z zakresu generatywnej sztucznej inteligencji, infrastruktury sieciowej, systemów operacyjnych i automatyzacji procesów."
+        "description": "Prowadzę zajęcia z zakresu generatywnej sztucznej inteligencji, zarządzania infrastrukturą sieciową, systemów operacyjnych i automatyzacji procesów."
       },
       "devops": {
         "title": "Inżynier systemowy & DevOps",
@@ -115,7 +115,7 @@
       "title": "Ukończone kursy",
       "itemsCount": "{{count}} pozycji",
       "categories": {
-        "cloudDevOpsSystems": "Cloud, DevOps i systemy",
+        "cloudDevOpsSystems": "Chmura, DevOps i systemy operacyjne",
         "databasesAnalytics": "Bazy danych i analityka",
         "processAutomation": "Automatyzacja procesów"
       }
@@ -123,33 +123,21 @@
   },
   "projects": {
     "title": "Projekty",
-    "subtitle": "Praktyczne projekty pokazujące IaC, automatyzację, bezpieczeństwo i pracę z Microsoft Azure.",
+    "subtitle": "Praktyczne projekty z zakresu infrastruktury chmurowej, IaC, CI/CD, automatyzacji i bezpieczeństwa.",
     "actions": {
       "viewRepository": "Zobacz repozytorium",
       "projectGallery": "Galeria projektu",
       "hideProjectGallery": "Ukryj galerię"
     },
     "featured": {
-      "tagline": "Kompletny przepływ DevOps dla aplikacji .NET uruchamianej w Microsoft Azure.",
-      "description": "Projekt pokazuje pełny proces zaprojektowania, utworzenia, zabezpieczenia i wdrożenia aplikacji chmurowej. Infrastruktura jest tworzona w Terraformie, aplikacja działa w kontenerze Docker, a GitHub Actions realizuje planowanie i wdrożenie infrastruktury, testy, skanowanie bezpieczeństwa, budowę obrazu oraz publikację do Azure Container Apps.",
-      "highlights": [
-        "Modułowa infrastruktura jako kod",
-        "Uwierzytelnianie GitHub Actions do Azure przez OIDC",
-        "Sieć prywatna dla Azure SQL",
-        "Automatyczne testy i skanowanie bezpieczeństwa",
-        "Kontrolowane wdrożenie infrastruktury i aplikacji",
-        "Monitoring i centralizacja logów"
-      ]
+      "title": "Azure Terraform Docker Guestbook (W trakcie rozbudowy)",
+      "tagline": "Kompletny proces CI/CD dla aplikacji kontenerowej .NET wdrażanej w Microsoft Azure.",
+      "description": "Projekt pokazuje pełny proces zaprojektowania, utworzenia, zabezpieczenia i wdrożenia aplikacji chmurowej. Infrastruktura jest tworzona w Terraformie, aplikacja działa w kontenerze Docker, a GitHub Actions realizuje planowanie i wdrożenie infrastruktury, testy, skanowanie bezpieczeństwa, budowę obrazu oraz publikację do Azure Container Apps."
     },
     "networkLab": {
+      "title": "Azure Network Infrastructure Lab (W trakcie rozbudowy)",
       "tagline": "Projekt dydaktyczny przygotowany dla studentów zarządzania infrastrukturą sieciową.",
-      "description": "Laboratorium Infrastructure as Code przygotowane jako przykład dydaktyczny dla studentów zarządzania infrastrukturą sieciową. Projekt wdraża w Microsoft Azure grupę zasobów, sieć wirtualną, trzy segmenty sieci, reguły Network Security Group, maszyny Windows Server oraz maszynę Ubuntu przygotowaną do monitorowania bezpieczeństwa z Wazuh. Pokazuje segmentację sieci, ograniczenie dostępu do warstwy backendowej i powtarzalne tworzenie środowiska przy użyciu Terraform.",
-      "highlights": [
-        "Przykład dydaktyczny dla studentów",
-        "Segmentacja sieci w trzech segmentach",
-        "Reguły dostępu dla warstwy backendowej",
-        "Powtarzalne wdrożenie środowiska z Terraform"
-      ]
+      "description": "Laboratorium Infrastructure as Code przygotowane jako przykład dydaktyczny dla studentów zarządzania infrastrukturą sieciową. Projekt wdraża w Microsoft Azure grupę zasobów, sieć wirtualną, trzy segmenty sieci, reguły Network Security Group, maszyny Windows Server oraz maszynę Ubuntu przygotowaną do monitorowania bezpieczeństwa z Wazuh. Pokazuje segmentację sieci, ograniczenie dostępu do warstwy backendowej i powtarzalne tworzenie środowiska przy użyciu Terraform."
     },
     "gallery": {
       "architecture": "Przegląd architektury Azure i warstw infrastruktury",
@@ -162,7 +150,7 @@
   },
   "academic": {
     "title": "Nauka i działalność akademicka",
-    "subtitle": "Połączenie praktyki inżynierskiej z dydaktyką i publikacjami naukowymi.",
+    "subtitle": "Połączenie praktyki inżynierskiej z pracą dydaktyczną i publikacjami naukowymi.",
     "education": {
       "title": "Edukacja",
       "items": {

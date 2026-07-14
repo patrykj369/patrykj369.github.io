@@ -17,7 +17,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
     <article className={getInteractiveCardClasses("project", "space-y-6 p-6")}>
       <div className="space-y-3">
         <h3 className="text-2xl font-semibold text-[var(--color-text)]">
-          {project.title}
+          {t(`${project.translationKey}.title`)}
         </h3>
         <p className="text-[var(--color-cyan)]">
           {t(`${project.translationKey}.tagline`)}

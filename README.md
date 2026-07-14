@@ -59,11 +59,50 @@ npm run check
 npm audit --audit-level=high
 ```
 
-## Deployment
+## CI/CD
 
-- CI workflow: `.github/workflows/ci.yml`
-- GitHub Pages workflow: `.github/workflows/deploy-pages.yml`
-- GitHub Pages should be configured to use GitHub Actions as source.
+The project uses GitHub Actions to validate, build, and deploy the application to GitHub Pages.
+
+The production pipeline is defined in `.github/workflows/deploy-prod.yml` and runs automatically after every push to the `main` branch. It can also be started manually using `workflow_dispatch`.
+
+The pipeline is divided into reusable CI and CD workflows:
+
+### Continuous Integration
+
+The `.github/workflows/ci.yml` workflow performs the following quality checks:
+
+1. Checks out the repository.
+2. Configures Node.js 24 with npm caching.
+3. Installs dependencies using `npm ci`.
+4. Verifies code formatting with Prettier.
+5. Runs ESLint.
+6. Executes the Vitest test suite.
+7. Verifies the production build.
+8. Audits production dependencies for high-severity vulnerabilities.
+
+Deployment is blocked if any of these checks fail.
+
+### Continuous Deployment
+
+After the CI workflow completes successfully, `.github/workflows/cd.yml`:
+
+1. Installs dependencies in a clean environment.
+2. Creates the production build using Vite.
+3. Configures GitHub Pages.
+4. Uploads the generated `dist` directory as a deployment artifact.
+5. Deploys the artifact to the `github-pages` environment.
+
+The workflow uses GitHub's OIDC token and dedicated Pages permissions. Deployment concurrency is limited to one active GitHub Pages deployment, with older in-progress runs cancelled when a newer commit is pushed.
+
+### Pipeline Status
+
+[![Deploy to Production Environment](https://github.com/patrykj369/patrykj369.github.io/actions/workflows/deploy-prod.yml/badge.svg)](https://github.com/patrykj369/patrykj369.github.io/actions/workflows/deploy-prod.yml)
+
+### Successful Pipeline Run
+
+![Successful GitHub Actions CI/CD pipeline](docs/images/ci-cd-pipeline.png)
+
+Production environment: [patrykjablonski.cloud](https://patrykjablonski.cloud)
 
 ## i18n Behavior
 

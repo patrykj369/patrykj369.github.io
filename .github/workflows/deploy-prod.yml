@@ -1,0 +1,26 @@
+name: Deploy to Production Environment
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    name: Code quality checks
+    uses: ./.github/workflows/ci.yml
+
+  cd:
+    name: Build and deploy to GitHub Pages
+    uses: ./.github/workflows/cd.yml
+    needs: ci

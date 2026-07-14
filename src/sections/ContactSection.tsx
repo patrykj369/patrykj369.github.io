@@ -5,7 +5,6 @@ import { Container } from "../components/common/Container";
 import { InteractiveLink } from "../components/common/InteractiveButton";
 import { getInteractiveCardClasses } from "../components/common/interactiveCardStyles";
 import { SectionReveal } from "../components/common/SectionReveal";
-import { SocialLinks } from "../components/ui/SocialLinks";
 
 export const ContactSection = () => {
   const { t } = useTranslation();

@@ -33,7 +33,7 @@
     "name": "Patryk Jabłoński",
     "headline": "Inżynier systemowy i DevOps, specjalizujący się w Microsoft Azure.",
     "roles": ["Inżynier", "Wykładowca akademicki", "Doktorant"],
-    "description": "Automatyzuję infrastrukturę i wdrożenia z użyciem Terraform, CI/CD, PowerShell i Bash. Łączę ponad 7 lat doświadczenia w IT z praktyką w utrzymaniu środowisk produkcyjnych Windows i Linux.",
+    "description": "Pracuję z infrastrukturą Azure, systemami Windows i Linux oraz automatyzacją wdrożeń. Tworzę rozwiązania w Terraformie, rozwijam potoki CI/CD i wspieram utrzymanie środowisk produkcyjnych.",
     "featuredProject": "Zobacz projekty",
     "contactButton": "Napisz do mnie",
     "location": "Nowy Sącz, Polska"

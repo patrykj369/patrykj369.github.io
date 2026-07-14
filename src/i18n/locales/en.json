@@ -33,7 +33,7 @@
     "name": "Patryk Jabłoński",
     "headline": "DevOps & Systems Engineer focused on Microsoft Azure.",
     "roles": ["Engineer", "Academic Lecturer", "PhD Student"],
-    "description": "I automate infrastructure and deployments with Terraform, CI/CD, PowerShell and Bash. I combine 7+ years in IT with hands-on ownership of Windows and Linux production environments.",
+    "description": "I work with Azure infrastructure, Windows and Linux systems, and deployment automation. I build solutions using Terraform, develop CI/CD pipelines, and help maintain production environments.",
     "featuredProject": "View projects",
     "contactButton": "Contact me",
     "location": "Nowy Sącz, Poland"

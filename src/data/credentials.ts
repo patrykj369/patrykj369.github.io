@@ -159,7 +159,7 @@ export const courseCategories: CourseCategory[] = [
         id: "intro-databases-repeat",
         name: "Introduction to databases",
         provider: "Codenga",
-        url: "https://api.codenga.pl/api/v2/public/certificate/pdf/kdju7ugo5ds4ws8wggokwgcc0wcwocs",
+        url: "https://api.codenga.pl/api/v2/public/certificate/pdf/t0sfk6hee7ks0oogog8s04404ocwcc0",
       },
       {
         id: "sql-foundations-exercises",

@@ -1129,7 +1129,6 @@ Kursy przechowuj w danych i grupuj w trzech dostępnych kategoriach.
 - `Power BI course, basics of data analysis and visualization`, strefakursow.pl, Link: https://api.strefakursow.pl/api/v2/public/certificate/pdf/sro96vidlyosg0s4kc4g4o0ws0occo
 - `SQL, Practical exercises`, Codenga, Link: https://api.codenga.pl/api/v2/public/certificate/pdf/32wav0za60owgsswccogw8o4kk44wws
 - `SQL Developer, specialist certificate`, Codenga, Link: https://api.codenga.pl/api/v2/public/path/certificate/nd59xwi8szkw40wo04owkokwk8gckkw/pdf
-- `Introduction to databases`, Codenga, Link: https://api.codenga.pl/api/v2/public/certificate/pdf/kdju7ugo5ds4ws8wggokwgcc0wcwocs
 - `SQL foundations, exercises`, Codenga, Link: https://api.codenga.pl/api/v2/public/certificate/pdf/kdju7ugo5ds4ws8wggokwgcc0wcwocs
 - `SQL foundations, level 1`, Codenga, Link: https://api.codenga.pl/api/v2/public/certificate/pdf/o82p18tm2v408co8wks8s880cs8c40c
 - `SQL foundations, level 2`, Codenga, Link: https://api.codenga.pl/api/v2/public/certificate/pdf/gg1r701c9lw04cs844s8ww8wswsk4ww

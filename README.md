@@ -8,6 +8,8 @@ Production URL: https://patrykjablonski.cloud
 
 A bilingual (PL/EN) Azure-focused portfolio website for Patryk Jabłoński, built as a static React application.
 
+![Podgląd działania strony](docs/images/portfolio-demo.webp)
+
 ## Features
 
 - Full PL/EN localization with i18next and URL language sharing (`?lang=pl` / `?lang=en`)

@@ -67,7 +67,6 @@ The project uses GitHub Actions to validate, build, and deploy the application t
 
 The production pipeline is defined in `.github/workflows/deploy-prod.yml` and runs automatically after every push to the `main` branch. It can also be started manually using `workflow_dispatch`.
 
-
 The pipeline is divided into reusable CI and CD workflows:
 
 ### Continuous Integration

@@ -43,10 +43,10 @@ A bilingual (PL/EN) Azure-focused portfolio website for Patryk Jabłoński, buil
 
 ## Local Development
 
-Required runtime: Node.js 24.0 LTS.
+Required runtime: Node.js 24.x (LTS).
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
@@ -58,7 +58,7 @@ npm run lint
 npm run test:run
 npm run build
 npm run check
-npm audit --audit-level=high
+npm audit --omit=dev --audit-level=high
 ```
 
 ## CI/CD
@@ -67,9 +67,12 @@ The project uses GitHub Actions to validate, build, and deploy the application t
 
 The production pipeline is defined in `.github/workflows/deploy-prod.yml` and runs automatically after every push to the `main` branch. It can also be started manually using `workflow_dispatch`.
 
+
 The pipeline is divided into reusable CI and CD workflows:
 
 ### Continuous Integration
+
+The CI workflow runs on pull requests and pushes targeting the `main` branch, excluding documentation-only changes. It can also be started manually using `workflow_dispatch`.
 
 The `.github/workflows/ci.yml` workflow performs the following quality checks:
 
@@ -126,4 +129,4 @@ Language resolution order:
 
 Expected path for profile photo: `public/images/profile.webp`.
 
-If the file is missing, the app uses `public/images/profile-fallback.svg` automatically.
+If the profile image cannot be loaded, the app displays the `PJ` initials as a fallback.

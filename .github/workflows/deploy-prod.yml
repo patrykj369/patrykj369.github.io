@@ -21,11 +21,9 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: github-pages
+  group: github-pages-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -35,5 +33,11 @@ jobs:
 
   cd:
     name: Build and deploy to GitHub Pages
-    uses: ./.github/workflows/cd.yml
+    if: github.event_name != 'pull_request'
     needs: ci
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/cd.yml
+    

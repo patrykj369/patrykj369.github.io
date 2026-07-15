@@ -12,6 +12,8 @@
 
 ---
 
+### Test CI/CD paths ignore
+
 ## 1. Cel witryny
 
 Stwórz nowoczesną, dwujęzyczną stronę wizytówkę przedstawiającą:

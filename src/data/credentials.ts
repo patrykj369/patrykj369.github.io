@@ -156,12 +156,6 @@ export const courseCategories: CourseCategory[] = [
         url: "https://api.codenga.pl/api/v2/public/path/certificate/nd59xwi8szkw40wo04owkokwk8gckkw/pdf",
       },
       {
-        id: "intro-databases-repeat",
-        name: "Introduction to databases",
-        provider: "Codenga",
-        url: "https://api.codenga.pl/api/v2/public/certificate/pdf/t0sfk6hee7ks0oogog8s04404ocwcc0",
-      },
-      {
         id: "sql-foundations-exercises",
         name: "SQL foundations, exercises",
         provider: "Codenga",

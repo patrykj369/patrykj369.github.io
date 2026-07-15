@@ -15,12 +15,12 @@ A bilingual (PL/EN) Azure-focused portfolio website for Patryk Jabłoński, buil
 - Full PL/EN localization with i18next and URL language sharing (`?lang=pl` / `?lang=en`)
 - Language persistence in localStorage (`portfolio.language`)
 - Semantic one-page architecture with accessible section navigation
-- Hero with custom Azure cloud topology visualization
+- Hero section with technologies orbit around profile image
 - Data-driven sections for expertise, experience, project case study, and academic profile
 - Accessible project gallery modal with keyboard support
 - Motion animations with reduced-motion handling
 - SEO metadata, Open Graph, canonical, JSON-LD, robots.txt, and sitemap.xml
-- CI checks and GitHub Pages deployment workflows
+- CI checks and CD GitHub Pages deployment workflows
 
 ## Tech Stack
 

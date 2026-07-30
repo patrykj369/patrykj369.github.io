@@ -54,6 +54,12 @@ export const courseCategories: CourseCategory[] = [
         url: "https://www.udemy.com/certificate/UC-5111da7d-25a9-4228-a05f-b3c5d7f38d29/",
       },
       {
+        id: "bash-course",
+        name: "Bash Course, Scripting and Automation",
+        provider: "strefakursow.pl",
+        url: "https://api.strefakursow.pl/api/v2/public/certificate/pdf/ttt13os483k0k8c0ow8ww8gks4cgg4c/PL",
+      },
+      {
         id: "azure-devops-course",
         name: "Comprehensive Azure DevOps course for everyone",
         provider: "Udemy",
@@ -106,12 +112,6 @@ export const courseCategories: CourseCategory[] = [
         name: "Networking Basics and Network Configuration in Linux",
         provider: "strefakursow.pl",
         url: "https://api.strefakursow.pl/api/v2/public/certificate/pdf/lu7c453f1nkgk4coc08gg8w0sskcwc8/PL",
-      },
-      {
-        id: "bash-course",
-        name: "Bash Course, Scripting and Automation",
-        provider: "strefakursow.pl",
-        url: "https://api.strefakursow.pl/api/v2/public/certificate/pdf/ttt13os483k0k8c0ow8ww8gks4cgg4c/PL",
       },
       {
         id: "wazuh-sekurak-course",

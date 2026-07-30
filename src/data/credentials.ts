@@ -113,6 +113,12 @@ export const courseCategories: CourseCategory[] = [
         provider: "strefakursow.pl",
         url: "https://api.strefakursow.pl/api/v2/public/certificate/pdf/ttt13os483k0k8c0ow8ww8gks4cgg4c/PL",
       },
+      {
+        id: "wazuh-sekurak-course",
+        name: "Top 10 Wazuh Applications - Incident Response",
+        provider: "Sekurak Academy",
+        url: "https://media.licdn.com/dms/image/v2/D4D2DAQFwUhoNLirVHg/profile-treasury-document-images_1280/B4DZ.0u5QsH0Ao-/1/1785443621451?e=1786579200&v=beta&t=RMwWEuYo6OlrZ_goXmA6P3FGMgH9Ubsgmv0jzia_kb0",
+      },
     ],
   },
   {
